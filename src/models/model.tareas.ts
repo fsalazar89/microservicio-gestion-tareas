@@ -36,6 +36,7 @@ export class ModelTareas {
     try {
       client = await pool.connect();
       let querySql = `SELECT
+      ttt.id AS id_tarea,
       ttt.id_estado AS id_estado,
       tte.nombre AS nombre_estado,
       ttt.titulo_tarea, 
